@@ -1,0 +1,138 @@
+html, html a{
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+
+
+header {
+	@include gradient-directional($brand-support, $brand-secondary, 45deg);
+	padding-top: 5em;
+	padding-bottom: 5em;
+	color: #fff;
+
+	.lead {	
+		a {
+			color: #fff;
+			text-decoration: underline;
+
+			&:hover {
+				color: #fff;
+				opacity: .8;
+			}
+		}
+	}
+
+}
+
+
+// Fancy Font
+// Headings
+
+.h-title {
+	font-family: $fancy-font;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+	line-height: 150%;
+}
+
+h4, h5 {
+	font-weight: 400;
+}
+
+
+// Type
+p {
+	line-height: 160%;
+}
+
+
+// Tag
+.tag {
+	font-family: $font-family-sans-serif;
+	text-transform: uppercase;
+}
+
+
+
+// Button
+
+.btn-outline-info {
+	&:hover {
+		opacity: .7;
+		background: none;
+	}
+}
+
+
+.btn-dribbble {
+	background-color: $dribbble;
+
+	&:hover {
+		background-color: darken($dribbble,10%);
+	}
+}
+
+.btn-behance {
+	background-color: $behance;
+
+	&:hover {
+		background-color: darken($behance,10%);
+	}
+}
+
+.btn-dribbble,
+.btn-behance {
+	border: 0;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+
+
+.sec-work {
+	border-top: 1px solid $gray-lighter;
+
+	.employer {
+		display: block;
+	}
+}
+
+.sec-personalProjects {
+	@include gradient-y($brand-more, $brand-primary, 0%, 100%);
+	
+	h2 {
+		color: #fff;
+	}
+
+	.card {
+	border: 0;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 0 8px 6px -6px  rgba(0,0,0,0.2);
+	        box-shadow: 0 8px 6px -6px  rgba(0,0,0,0.2);
+	}
+}
+
+.card {
+	border: 0;
+}
+
+
+
+// Footer
+
+footer {
+	background-color: #292d35;
+	color: #787b80;
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+
+
+.lead {
+	strong {
+		font-weight: 700;
+	}
+}
